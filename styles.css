@@ -1,0 +1,139 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #626F47;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    padding: 30px;
+}
+
+#todoList {
+    width: 100%;
+    max-width: 500px;
+    background-color: #A4B465;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(10, 10, 10, 0.5);
+    overflow: hidden;
+    border: 1px solid #FEFAE0;
+}
+
+h2 {
+    background-color: #FFCF50;
+    color: #1e1e1e;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #FEFAE0;
+}
+
+#tasksContainer {
+    padding: 20px;
+}
+
+.task input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #626F47;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.task:hover {
+    background-color: #626F47;
+}
+
+.task label {
+    flex-grow: 1;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color: #FEFAE0;
+}
+
+.task i {
+    cursor: pointer;
+    color: #FEFAE0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.task.completed label {
+    text-decoration: line-through;
+    color: #626F47;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #FFCF50;
+    background-color: #A4B465;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.clear-all {
+    background-color: #FFCF50;
+    color: #1e1e1e;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.delete-all {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .task {
+        align-items: center;
+    }
+
+    .task label {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
